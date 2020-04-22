@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity" verbose="1">
+
+    <groups>
+        <run>
+            <include name="Sanity"></include>
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="com.orangehrmlive.demo.opensource.listeners.Listeners"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+
+    <test name="Test Case">
+        <classes>
+            <class name="com.orangehrmlive.demo.opensource.testsuite.TestCase"></class>
+        </classes>
+    </test>
+
+
+</suite>
